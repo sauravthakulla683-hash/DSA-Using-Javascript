@@ -2,6 +2,7 @@ let a = document.querySelector(".child");
 let button = document.querySelector(".button");
 let b = 10;
 let c = false;
+let s = null;
 
 button.addEventListener("click", () => {
   if (!c) {
