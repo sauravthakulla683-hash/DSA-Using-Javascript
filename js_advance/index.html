@@ -5,7 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .parent {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 70%;
+      background-color: black;
+    }
+    .child {
+      background-color: white;
+      width: 10%;
+      height: 10%;
+    }
+    .button {
+      background-color: white;
+      width: 20%;
+      height: 20%;
+      margin: 50px auto;
+      z-index: 10;
+    }
+  </style>
   <body>
-    <script src="script.js"></script>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    <button class="button">Click</button>
+    <script src="js.js"></script>
   </body>
 </html>
