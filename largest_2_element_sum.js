@@ -1,9 +1,9 @@
 let sum = 0;
 let max = -Infinity;
-let a = [1, -2, 3, 4];
+let a = [1, -2, 3, 4, 8];
 
-for (let i = 0; i < a.length - 1; i++) {
-  for (let j = i; j < a.length - 1; j++) {
+for (let i = 0; i < a.length; i++) {
+  for (let j = i; j < a.length; j++) {
     sum = a[i] + a[j];
     if (max <= sum) {
       max = sum;
