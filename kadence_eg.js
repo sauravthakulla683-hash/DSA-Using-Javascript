@@ -1,9 +1,8 @@
-let arr = [1, -2, 3, 4];
-let sum = 0;
+let a = [1, -2, 3, 4];
 let max = -Infinity;
-
-for (let i = 0; i < arr.length; i++) {
-  sum = Math.max(arr[i], sum + arr[i]);
+let sum = 0;
+for (let i = 0; i < a.length; i++) {
+  sum = Math.max(a[i], sum + a[i]);
   max = Math.max(max, sum);
 }
 console.log(max);
