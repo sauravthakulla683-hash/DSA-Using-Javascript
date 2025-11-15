@@ -1,13 +1,11 @@
-var removeduplicates = function (nums) {
-  let j = 1;
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] !== nums[i + 1]) {
-      nums[j] = nums[i];
-      j++;
-    }
-  }
-  return j;
-};
+let a = [1, 3, 3, 4, 5];
+let k = 1;
 
-let arr = [1, 1, 2, 2, 3, 4, 4, 5];
-console.log(removeduplicates(arr));
+for (let i = 0; i < a.length - 1; i++) {
+  if (a[i] !== a[i + 1]) {
+    a[k] = a[i + 1];
+    k++;
+  }
+}
+console.log(k);
+console.log(a);
