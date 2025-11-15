@@ -9,7 +9,7 @@ for (let i of a) {
     map[i]++;
   }
 }
-
+console.log(map);
 for (let i of a) {
   if (map[i] === 1) {
     console.log(i);
