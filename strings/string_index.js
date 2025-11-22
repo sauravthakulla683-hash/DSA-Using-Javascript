@@ -1,6 +1,15 @@
-let name = "saurabh";
-console.log(name[0]);
-console.log(name[1]);
-console.log(name[2]);
-console.log(name[3]);
-console.log(name[4]);
+let s = ["h", "e", "l", "l", "o"];
+let a = [];
+let count = 0;
+let i = 0;
+
+for (i = s.length - 1; i >= 0; i--) {
+  a[count] = s[i];
+  count++;
+}
+i = 0;
+while (i < s.length) {
+  s[i] = a[i];
+  i++;
+}
+console.log(s);
